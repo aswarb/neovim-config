@@ -7,8 +7,10 @@ lua require('lsp-config')
 let mapleader = "\<Space>"
 lua require('telescope-config')
 lua require('nvim-tree-config')
+lua require('coq-3p-config')
+
 colorscheme onedark
 set number
 set relativenumber
-
-
+set indentexpr='smartindent'
+set shiftwidth=4
