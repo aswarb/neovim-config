@@ -1,19 +1,21 @@
 local function my_on_attach(bufnr)
-  local api = require "nvim-tree.api"
+	local api = require "nvim-tree.api"
 
-  local function opts(desc)
-    return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
-  end
+	local function opts(desc)
+		return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+	end
 
-  -- default mappings
-  -- api.config.mappings.default_on_attach(bufnr)
+	-- default mappings
+	-- api.config.mappings.default_on_attach(bufnr)
 
-  -- custom mappings
-  vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
-	vim.keymap.set('n', '<C-t-o>',	api.tree.toggle,		opts('Toggle'))
+	-- custom mappings
+	vim.keymap.set('n', '?',     		api.tree.toggle_help,{})
+	vim.keymap.set('n', '<leader>tr',	api.tree.toggle,{})	
+
+
 end
 
 -- pass to setup along with your other options
 return require("nvim-tree").setup {
-  on_attach = my_on_attach(),
+	on_attach = my_on_attach(),
 }

@@ -4,7 +4,7 @@ return require('onedark').setup{
 
 	code_style = {
 		comments = 'italic',
-		keywords = 'none',
+		keywords = 'italic',
 		functions = 'none',
 		strings = 'none',
 		variables = 'none'
