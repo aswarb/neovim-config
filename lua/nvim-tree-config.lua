@@ -9,8 +9,9 @@ local function my_on_attach(bufnr)
 	-- api.config.mappings.default_on_attach(bufnr)
 
 	-- custom mappings
-	vim.keymap.set('n', '?',     		api.tree.toggle_help,{})
-	vim.keymap.set('n', '<leader>tr',	api.tree.toggle,{})	
+	vim.keymap.set('n', '?',     		api.tree.toggle_help,	opts('Help'))
+	vim.keymap.set('n', '<leader>tt',	api.tree.toggle,	{})
+	vim.keymap.set('n', '<leader>ts',	api.tree.search_node,	opts('Search'))
 
 
 end

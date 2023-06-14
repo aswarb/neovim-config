@@ -23,5 +23,17 @@ return require('packer').startup(function(use)
 			'nvim-tree/nvim-web-devicons', -- optional
 		},
 	}
+	use 'ThePrimeagen/vim-be-good'
+	
+
+	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
+	use 'neovim/nvim-lspconfig'
+	
+	use 'ms-jpq/coq_nvim'
+	use 'ms-jpq/coq.artifacts'
+	use 'ms-jpq/coq.thirdparty'
+
 end)
+
 
