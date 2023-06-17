@@ -1,6 +1,7 @@
 return require('onedark').setup{
     style = 'warm',
     transparent = true,
+    ending_tildes = true,
 
     code_style = {
 	comments = 'italic',

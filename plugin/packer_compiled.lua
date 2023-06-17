@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/aos/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/aos/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/aos/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",

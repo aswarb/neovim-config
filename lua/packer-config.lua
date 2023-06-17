@@ -32,6 +32,10 @@ return require('packer').startup(function(use)
     use 'ms-jpq/coq_nvim'
     use 'ms-jpq/coq.artifacts'
     use 'ms-jpq/coq.thirdparty'
+    use {
+	'nvim-lualine/lualine.nvim',
+	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
 end)
 

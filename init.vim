@@ -8,7 +8,7 @@ let mapleader = "\<Space>"
 lua require('telescope-config')
 lua require('nvim-tree-config')
 lua require('coq-3p-config')
-
+lua require('lualine-config')
 colorscheme onedark
 set number
 set relativenumber
