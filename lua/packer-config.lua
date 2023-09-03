@@ -36,7 +36,10 @@ return require('packer').startup(function(use)
 	'nvim-lualine/lualine.nvim',
 	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-
+    use "folke/tokyonight.nvim"
+    use "NvChad/nvim-colorizer.lua"
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+    -- use "Bekaboo/dropbar.nvim"
 end)
 
 
