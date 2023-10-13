@@ -12,10 +12,11 @@ return require('packer').startup(function(use)
 	end,
     }
     use {
-	'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	-- or                            , branch = '0.1.x',
+	'nvim-telescope/telescope.nvim',
 	requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use {'nvim-telescope/telescope-ui-select.nvim' }
+
     use 'navarasu/onedark.nvim'
     use {
 	'nvim-tree/nvim-tree.lua',
@@ -40,6 +41,15 @@ return require('packer').startup(function(use)
     use "NvChad/nvim-colorizer.lua"
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
     -- use "Bekaboo/dropbar.nvim"
+
+    use({
+	"iamcco/markdown-preview.nvim",
+	run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+    use "David-Kunz/gen.nvim"
 end)
 
 
