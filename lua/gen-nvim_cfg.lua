@@ -1,5 +1,5 @@
 
-require('gen').model = 'mistral:instruct'
+require('gen').model = 'gemma3:12b'
 
 require('gen').prompts['Elaborate_Text'] = {
   prompt = "Elaborate the following text:\n$text",

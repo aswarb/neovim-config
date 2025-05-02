@@ -39,6 +39,7 @@ return require("packer").startup(function(use)
 	})
 	-- use("folke/tokyonight.nvim")
 	use("sainnhe/gruvbox-material")
+	use("shaunsingh/nord.nvim")
 	use("NvChad/nvim-colorizer.lua")
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 	-- use "Bekaboo/dropbar.nvim"
@@ -65,4 +66,5 @@ return require("packer").startup(function(use)
 		branch = "harpoon2",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use ("rebelot/kanagawa.nvim")
 end)
