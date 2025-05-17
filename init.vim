@@ -3,6 +3,8 @@ let g:coq_settings = { 'auto_start' : 'shut-up' }
 lua require("packer_cfg")
 lua require('onedark_cfg')
 lua require('mason_cfg')
+lua require('conform_cfg')
+lua require('mason-conform_cfg')
 lua require('lsp')
 let mapleader = "\<Space>"
 lua require('telescope_cfg')
@@ -10,7 +12,7 @@ lua require('coq-3p_cfg')
 lua require('lualine_cfg')
 "lua require('tokyonight-config')
 lua require('gen-nvim_cfg')
-lua require('formatter_cfg')
+"lua require('formatter_cfg')
 lua require('undotree_cfg')
 lua require('keybinds')
 "colorscheme tokyonight
